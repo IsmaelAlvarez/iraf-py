@@ -21,7 +21,9 @@ from astrocalc_s import *
 
 
 class spect:
-    'clase para manejo de spectros obtenidos tipicamente de un .fits'
+    """
+    clase principal para el manejo de espectros obtenidos por un fits
+    """
     archive_path = None  # direccion del archivo de origen del spectro
     disp_axis = 2  # horisontal es 2 y vertical es 1
     exp_time = None  # usado para almacenar el tiempo de expocicion
@@ -45,6 +47,9 @@ class spect:
     pendiente = None
 
     def __init__(self, path=None):
+        """
+        init apartir de el archivo origen
+        """
         self.archive_path = path
 
     '''pendiente:
@@ -60,6 +65,9 @@ class spect:
     '''
 
     def get_exp_time(self):
+        """
+        obtencion del tiempo de expocicion de la imagen
+        """
         if self.exp_time is not None:
             return self.exp_time
         else:
@@ -72,22 +80,40 @@ class spect:
                 return self.exp_time
 
     def get_gain(self):
+        """
+        geter de la ganancia
+        """
         if self.gain is not None:
             return self.gain
 
     def set_gain(self, gain):
+        """
+        seter de la ganancia
+        """
         self.gain = gain
 
     def set_path(self, path=None):
+        """
+        seter del archivo de origen
+        """
         self.archive_path = path
 
     def get_path(self):
+        """
+        geter del archivo de origen
+        """
         return self.archive_path
 
     def display_path(self):
+        """
+        display del path de origen, a futuro remplasar print por un ret
+        """
         print "path: %s" % self.archive_path
 
     def loadimg(self):
+        """
+        carga en ram la imagen de origen
+        """
         if self.archive_path is None:
             print "path not especified"
             return False
@@ -96,23 +122,42 @@ class spect:
             return True
 
     def freeimg(self):
+        """
+        livera de la ram la imegen de origen
+        """
         del self.img
 
     def set_peak(self, peak):
+        """
+        seter del peak
+        """
         self.peak = peak
 
     def set_aperture(self, aperture):
+        """
+        seter de la apertura
+        """
         self.apertura = aperture
 
     def set_skyL(self, s1, s2):
+        """
+        seter del Lsky
+        """
         self.deltaL = self.peak - self.apertura - s2
         self.skyDL = s2 - s1
 
     def set_skyR(self, s1, s2):
+        """
+        seter del Rsky
+        """
         self.deltaR = s2 - self.peak + self.apertura
         self.skyDR = s2 - s1
 
     def get_traza(self):
+        """
+        funcion para obtener la traza suponiendo que ya tenemos el peak
+        y la apertura
+        """
         if (self.peak is None or self.apertura is None):
             print '\033[93m' + 'Warning:' + '\033[0m' +
             ' peak or aperture not set'
@@ -147,6 +192,14 @@ class spect:
         return self.traza
 
     def do_fit_traza(self, s, grado=None):
+        """
+        funcion para generar un fiteo suponiendo que ya tenemos la traza
+        grado es solo usado para el caso de que queramos fitear un
+        polinomio
+        s=g para gauseana
+        s=l para lineal
+        s=p para polinomial
+        """
         if s == 't':
             f_init = models.Trapezoid1D(
                 amplitude=1., x_0=0., width=1., slope=0.5)
@@ -161,12 +214,19 @@ class spect:
         self.fit_traza = g(range(0, len(self.traza)))
 
     def get_fit_traza(self):
+        """
+        geter de la traza
+        """
         if self.fit_traza is None:
             print '\033[93m'+'Warning:'+'\033[0m'+' fitt not done yet'
             return
         return self.fit_traza
 
     def do_spec_stract(self):
+        """
+        funcion que realiza la extraccion del espectro ya teniendo un
+        fiteo
+        """
         if self.fit_traza is None:
             print '\033[93m'+'Warning:'+'\033[0m'+' fitt not done yet'
             return
@@ -187,15 +247,25 @@ class spect:
         self.errspect = map(lambda x: x/self.exp_time, self.errspect)
 
     def get_spec(self):
+        """
+        geter del espectro
+        """
         if self.spectro1 is None:
             print '\033[93m'+'Warning:'+'\033[0m'+' spec_stract not done yet'
             return
         return self.spectro1
 
     def get_spec_error(self):
+        """
+        geter del error del espectro
+        """
         return self.errspect
 
     def do_sky_stract(self):
+        """
+        funcion que realiza la extraccion del espectro del cielo, tanto
+        R como L
+        """
         self.loadimg()
         data = self.img[0].data
         if self.disp_axis == 2:
@@ -226,18 +296,33 @@ class spect:
         self.errskyR = map(lambda x: x/self.exp_time, self.errskyR)
 
     def get_sky_L(self):
+        """
+        geter del espectro del skyL
+        """
         return self.skyL
 
     def get_sky_R(self):
+        """
+        geter del espectro del skyR
+        """
         return self.skyR
 
     def get_sky_L_error(self):
+        """
+        geter del error del espectro del skyL
+        """
         return self.errskyL
 
-    def get_sky_L(self):
+    def get_sky_R_error(self):
+        """
+        geter del error del espectro del skyR
+        """
         return self.errskyR
 
     def do_final_spect(self):
+        """
+        restamos el cielo del espectro
+        """
         self.final = np.zeros(len(self.spectro1))
         self.errfinal = np.zeros(len(self.spectro1))
 
@@ -260,12 +345,21 @@ class spect:
                 np.power(self.errskyL[i], 2))
 
     def get_final_spect(self):
+        """
+        geter del espectro final
+        """
         return self.final
 
     def get_final_spect_error(self):
+        """
+        geter del error del espectro final
+        """
         return self.errfinal
 
     def get_sky_pendent(self):
+        """
+        geter de la pendiente entre los skyL y skyR
+        """
         self.pendiente = np.zeros(len(self.skyR))
 
         for i in range(0, len(self.skyR)):
@@ -276,6 +370,13 @@ class spect:
         return self.pendiente
 
     def recalcularpeak(self, spe=None):
+        """
+        funcion para recalcular el peak
+        si spe=none recalcula usando la funcion centroide en el area
+        local de la apertura
+        spe puede ser un objeto spect y se puede recalcular usando el
+        peak y la apertura de este objeto
+        """
         if spe is None:
             self.loadimg()
             data = self.img[0].data
@@ -299,10 +400,16 @@ class spect:
 
     def set_peak_aperture_skyL_skyR(
             self, peak, aperture, skyl1, skyl2, skyr1, skyr2):
+        """
+        funcion para setear rapidamente peak apertura y los sky
+        """
         self.set_peak(peak)
         self.set_aperture(aperture)
         self.set_skyL(skyl1, skyl2)
         self.set_skyR(skyr1, skyr2)
 
     def set_disp_axis(self, axis):
+        """
+        seter del eje de dispecion
+        """
         self.disp_axis = axis

@@ -18,6 +18,9 @@ import pyfits
 
 
 class dispes:
+    """
+    clase para obtener el eje de dispecion de forma grafica
+    """
     'usado para definir el eje de dispercion'
     x1 = 0
     y1 = 0
@@ -26,24 +29,40 @@ class dispes:
     confirmacion = 0
 
     def __init__(self, x=0, y=0):
+        """
+        inicialisacion del objeto
+        """
         self.x1 = x
         self.y1 = y
 
     def setx1(self, x=0, y=0):
+        """
+        se fija primer punto
+        """
         self.x1 = x
         self.y1 = y
 
     def setx2(self, x=0, y=0):
+        """
+        se fija segundo punto
+        """
         self.x2 = x
         self.y2 = y
 
     def disper(self):
+        """
+        dependiendo de la mayor diferencia en los ejes se deduce el eje
+        de dispecion
+        """
         if self.x1 - self.x2 > self.y1 - self.y2:
             return 1  # dispersion en el primer indice, x
         else:
             return 2  # dispersion en el segundo indice, y
 
     def limpiar(self):
+        """
+        seteamos en 0 todos los valores
+        """
         self.setx1()
         self.setx2()
         self.confirmacion = 0
@@ -52,6 +71,10 @@ d = dispes(0, 0)
 
 
 class skypeaksky:
+    """
+    clase usada para obtener de forma grafica la apertura el peak y los
+    sky
+    """
     ypeak = None
     ysky = None
     xpeak = None
@@ -63,9 +86,15 @@ class skypeaksky:
     confir = 0
 
     def __init__(self, yp=None):
+        """
+        inicialisacion del objeto
+        """
         ypeak = yp
 
     def limpiar(self):
+        """
+        limpiesa del objeto
+        """
         self.ypeak = None
         self.ysky = None
         self.xpeak = None
@@ -80,6 +109,9 @@ sps = skypeaksky()
 
 
 def on_keysky1(event):
+    """
+    funcion para setear de forma grafica el Lsky
+    """
 
     if event.key == 'd':  # restet
         plt.close()
@@ -108,6 +140,9 @@ def on_keysky1(event):
 
 
 def on_keysky2(event):
+    """
+    funcion para setear de forma grafica el Rsky
+    """
 
     if event.key == 'd':  # restet
         plt.close()
@@ -135,6 +170,9 @@ def on_keysky2(event):
 
 
 def on_keypeak(event):
+    """
+    funcion para setear el peak de forma grafica
+    """
 
     if event.key == 'enter':
         plt.plot(
@@ -175,6 +213,9 @@ def on_keypeak(event):
 
 
 def on_keydisp(event):
+    """
+    funcion para setear el eje de dispercion de forma grafica
+    """
     if event.key == 'enter':
         plt.plot([d.x1, d.x2], [d.y1, d.y2], 'r-', linewidth=3.0)
         plt.title('to continue press \'b\' to reset \'d\'')
@@ -199,6 +240,9 @@ def on_keydisp(event):
 
 
 def setdispaxis(img):
+    """
+    funcion que itera para obtener de forma grafica el eje de dispercion
+    """
     # en caso de no saber cual es el eje de dispersion
 
     data = img[0].data
@@ -217,6 +261,9 @@ def setdispaxis(img):
 
 
 def setpeakerrsky(img, eje_de_disp):  # remplaza apall de IRAF
+    """
+    funcion que itera para obtener el peak la apertura y el sky
+    """
     data = img[0].data
     if eje_de_disp == 2:
         data = zip(*data)  # trasponemos los datos

@@ -58,7 +58,10 @@ def apert_error(gain, apert, a):
     """
     # N_e_peak = gain * Fpeak
     # N_e_sky = gain * Fsky
-    # SNR = N_e_peak / sp.sqrt(N_e_peak + apert * (1.0 + float(apert)/apert_sky) * (N_e_sky + ron))
+    # SNR = N_e_peak /
+    # sp.sqrt(
+    #     N_e_peak +
+    #     apert * (1.0 + float(apert)/apert_sky) * (N_e_sky + ron))
     SNR = np.sqrt(a)
-    
+
     return SNR

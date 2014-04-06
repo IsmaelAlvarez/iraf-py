@@ -21,8 +21,14 @@ import spectro_metria
 
 
 class spect(spectro_metria.spect):
+    """
+    extiende con funciones graficas la clase spect
+    """
 
     def set_disp_axis(self, axis=None):
+        """
+        seter de el eje de dispecion
+        """
         if axis is None:
             if self.loadimg():
                 self.disp_axis = setdispaxis(self.img)
@@ -32,6 +38,9 @@ class spect(spectro_metria.spect):
             self.disp_axis = axis
 
     def plot_sky_pendent(self):
+        """
+        plot de la pendiente entre skyL y skyR
+        """
         plt.plot(self.pendiente)
         plt.ylabel('intensidad luminica')
         plt.xlabel('columnas del CCD')
@@ -41,6 +50,9 @@ class spect(spectro_metria.spect):
         plt.show()
 
     def plot_final_and_err(self):
+        """
+        plot del espectro final con su error
+        """
         plt.plot(self.final)
         plt.errorbar(range(0, len(self.final)), self.final, yerr=self.errfinal)
         plt.ylabel('intensidad luminica')
@@ -49,6 +61,9 @@ class spect(spectro_metria.spect):
         plt.show()
 
     def plot_final(self):
+        """
+        plot del espectro final
+        """
         plt.plot(self.final)
         plt.ylabel('intensidad luminica')
         plt.xlabel('columnas del CCD')
@@ -56,6 +71,9 @@ class spect(spectro_metria.spect):
         plt.show()
 
     def plot_sky(self):
+        """
+        plot de skyR y skyL
+        """
         plt.plot(self.skyR, label='cielo derecho')
         plt.plot(self.skyL, label='cielo izquerdo')
         plt.ylabel('intensidad luminica')
@@ -65,6 +83,9 @@ class spect(spectro_metria.spect):
         plt.show()
 
     def plot_sky_and_err(self):
+        """
+        plot de los sky con sus errores
+        """
         plt.plot(self.skyR, label='cielo derecho')
         plt.plot(self.skyL, label='cielo izquerdo')
         plt.errorbar(
@@ -80,6 +101,9 @@ class spect(spectro_metria.spect):
         plt.show()
 
     def plot_spec(self):
+        """
+        plot del espectro extraido, sin restar el cielo
+        """
         if self.spectro1 is None:
             print '\033[93m' + 'Warning:' + '\033[0m' +
             ' spec_stract not done yet'
@@ -90,6 +114,9 @@ class spect(spectro_metria.spect):
         plt.show()
 
     def plot_spec_and_err(self):
+        """
+        plot del espectro extraido con su error, sin restar el cielo
+        """
         if self.spectro1 is None:
             print '\033[93m' + 'Warning:' + '\033[0m' +
             ' spec_stract not done yet'
@@ -103,6 +130,9 @@ class spect(spectro_metria.spect):
         plt.show()
 
     def plot_traza_fit_and_img(self):
+        """
+        plot de la imagen, la traza y su fiteo
+        """
         if self.fit_traza is None:
             print '\033[93m' + 'Warning:' + '\033[0m' +
             ' fitt not done yet'
@@ -122,6 +152,9 @@ class spect(spectro_metria.spect):
         self.freeimg
 
     def plot_traza_and_fit(self):
+        """
+        plot de la traza con su fiteo
+        """
         if self.fit_traza is None:
             print '\033[93m' + 'Warning:' + '\033[0m' +
             ' fitt not done yet'
@@ -137,6 +170,9 @@ class spect(spectro_metria.spect):
         plt.show()
 
     def plot_traza_and_img(self):
+        """
+        plot de la imagen con la traza
+        """
         if self.traza is None:
             self.get_traza()
         self.loadimg()
@@ -151,6 +187,9 @@ class spect(spectro_metria.spect):
         self.freeimg()
 
     def set_peak_aperture_and_sky(self):
+        """
+        funcion para setear el peak, la apertura y el sky
+        """
         self.loadimg()
         setpeakerrsky(self.img, self.disp_axis)
         self.set_peak(sps.xpeak)
