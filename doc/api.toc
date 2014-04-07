@@ -1,0 +1,22 @@
+\contentsline {section}{Contents}{1}{section*.2}
+\contentsline {section}{\numberline {1}Module astrocalc\_s}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Functions}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Variables}{2}{subsection.1.2}
+\contentsline {section}{\numberline {2}Module astroplot\_s}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Functions}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Variables}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Class dispes}{3}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Methods}{3}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Class Variables}{4}{subsubsection.2.3.2}
+\contentsline {subsection}{\numberline {2.4}Class skypeaksky}{4}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Methods}{4}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Class Variables}{4}{subsubsection.2.4.2}
+\contentsline {section}{\numberline {3}Module spectro\_metria}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Class spect}{5}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Methods}{5}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Class Variables}{7}{subsubsection.3.1.2}
+\contentsline {section}{\numberline {4}Module spectro\_metria\_g}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Class spect}{9}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Methods}{9}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Class Variables}{10}{subsubsection.4.1.2}
+\contentsline {section}{Index}{11}{section*.4}

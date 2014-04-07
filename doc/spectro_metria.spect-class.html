@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>spectro_metria.spect</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="spectro_metria-module.html">Module&nbsp;spectro_metria</a> ::
+        Class&nbsp;spect
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="spectro_metria.spect-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class spect</h1><p class="nomargin-top"><span class="codelink"><a href="spectro_metria-pysrc.html#spect">source&nbsp;code</a></span></p>
+<p>clase principal para el manejo de espectros obtenidos por un fits</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__init__"></a><span class="summary-sig-name">__init__</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">path</span>=<span class="summary-sig-default">None</span>)</span><br />
+      init apartir de el archivo origen</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_exp_time"></a><span class="summary-sig-name">get_exp_time</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      obtencion del tiempo de expocicion de la imagen</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_exp_time">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_gain"></a><span class="summary-sig-name">get_gain</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter de la ganancia</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_gain">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="set_gain"></a><span class="summary-sig-name">set_gain</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">gain</span>)</span><br />
+      seter de la ganancia</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.set_gain">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="set_path"></a><span class="summary-sig-name">set_path</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">path</span>=<span class="summary-sig-default">None</span>)</span><br />
+      seter del archivo de origen</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.set_path">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_path"></a><span class="summary-sig-name">get_path</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter del archivo de origen</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_path">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="display_path"></a><span class="summary-sig-name">display_path</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      display del path de origen, a futuro remplasar print por un ret</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.display_path">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="loadimg"></a><span class="summary-sig-name">loadimg</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      carga en ram la imagen de origen</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.loadimg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="freeimg"></a><span class="summary-sig-name">freeimg</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      livera de la ram la imegen de origen</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.freeimg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="set_peak"></a><span class="summary-sig-name">set_peak</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">peak</span>)</span><br />
+      seter del peak</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.set_peak">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="set_aperture"></a><span class="summary-sig-name">set_aperture</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">aperture</span>)</span><br />
+      seter de la apertura</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.set_aperture">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="set_skyL"></a><span class="summary-sig-name">set_skyL</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">s1</span>,
+        <span class="summary-sig-arg">s2</span>)</span><br />
+      seter del Lsky</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.set_skyL">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="set_skyR"></a><span class="summary-sig-name">set_skyR</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">s1</span>,
+        <span class="summary-sig-arg">s2</span>)</span><br />
+      seter del Rsky</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.set_skyR">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_traza"></a><span class="summary-sig-name">get_traza</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      funcion para obtener la traza suponiendo que ya tenemos el peak y la 
+      apertura</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_traza">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="do_fit_traza"></a><span class="summary-sig-name">do_fit_traza</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">s</span>,
+        <span class="summary-sig-arg">grado</span>=<span class="summary-sig-default">None</span>)</span><br />
+      funcion para generar un fiteo suponiendo que ya tenemos la traza 
+      grado es solo usado para el caso de que queramos fitear un polinomio 
+      s=g para gauseana s=l para lineal s=p para polinomial</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.do_fit_traza">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_fit_traza"></a><span class="summary-sig-name">get_fit_traza</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter de la traza</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_fit_traza">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="do_spec_stract"></a><span class="summary-sig-name">do_spec_stract</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      funcion que realiza la extraccion del espectro ya teniendo un fiteo</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.do_spec_stract">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_spec"></a><span class="summary-sig-name">get_spec</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter del espectro</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_spec">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_spec_error"></a><span class="summary-sig-name">get_spec_error</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter del error del espectro</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_spec_error">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="do_sky_stract"></a><span class="summary-sig-name">do_sky_stract</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      funcion que realiza la extraccion del espectro del cielo, tanto R 
+      como L</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.do_sky_stract">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_sky_L"></a><span class="summary-sig-name">get_sky_L</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter del espectro del skyL</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_sky_L">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_sky_R"></a><span class="summary-sig-name">get_sky_R</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter del espectro del skyR</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_sky_R">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_sky_L_error"></a><span class="summary-sig-name">get_sky_L_error</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter del error del espectro del skyL</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_sky_L_error">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_sky_R_error"></a><span class="summary-sig-name">get_sky_R_error</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter del error del espectro del skyR</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_sky_R_error">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="do_final_spect"></a><span class="summary-sig-name">do_final_spect</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      restamos el cielo del espectro</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.do_final_spect">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_final_spect"></a><span class="summary-sig-name">get_final_spect</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter del espectro final</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_final_spect">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_final_spect_error"></a><span class="summary-sig-name">get_final_spect_error</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter del error del espectro final</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_final_spect_error">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_sky_pendent"></a><span class="summary-sig-name">get_sky_pendent</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      geter de la pendiente entre los skyL y skyR</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.get_sky_pendent">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="recalcularpeak"></a><span class="summary-sig-name">recalcularpeak</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">spe</span>=<span class="summary-sig-default">None</span>)</span><br />
+      funcion para recalcular el peak si spe=none recalcula usando la 
+      funcion centroide en el area local de la apertura spe puede ser un 
+      objeto spect y se puede recalcular usando el peak y la apertura de 
+      este objeto</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.recalcularpeak">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="set_peak_aperture_skyL_skyR"></a><span class="summary-sig-name">set_peak_aperture_skyL_skyR</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">peak</span>,
+        <span class="summary-sig-arg">aperture</span>,
+        <span class="summary-sig-arg">skyl1</span>,
+        <span class="summary-sig-arg">skyl2</span>,
+        <span class="summary-sig-arg">skyr1</span>,
+        <span class="summary-sig-arg">skyr2</span>)</span><br />
+      funcion para setear rapidamente peak apertura y los sky</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.set_peak_aperture_skyL_skyR">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="set_disp_axis"></a><span class="summary-sig-name">set_disp_axis</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">axis</span>)</span><br />
+      seter del eje de dispecion</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="spectro_metria-pysrc.html#spect.set_disp_axis">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="archive_path"></a><span class="summary-name">archive_path</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="disp_axis"></a><span class="summary-name">disp_axis</span> = <code title="2">2</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="exp_time"></a><span class="summary-name">exp_time</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="gain"></a><span class="summary-name">gain</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="traza"></a><span class="summary-name">traza</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="fit_traza"></a><span class="summary-name">fit_traza</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="peak"></a><span class="summary-name">peak</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="apertura"></a><span class="summary-name">apertura</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="deltaR"></a><span class="summary-name">deltaR</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="deltaL"></a><span class="summary-name">deltaL</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="skyDR"></a><span class="summary-name">skyDR</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="skyDL"></a><span class="summary-name">skyDL</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="spectro1"></a><span class="summary-name">spectro1</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="errspect"></a><span class="summary-name">errspect</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="skyR"></a><span class="summary-name">skyR</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="errskyR"></a><span class="summary-name">errskyR</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="skyL"></a><span class="summary-name">skyL</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="errskyL"></a><span class="summary-name">errskyL</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="final"></a><span class="summary-name">final</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="errfinal"></a><span class="summary-name">errfinal</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="pendiente"></a><span class="summary-name">pendiente</span> = <code title="None">None</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sun Apr  6 23:19:25 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

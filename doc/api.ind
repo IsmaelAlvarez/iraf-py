@@ -1,0 +1,131 @@
+\begin{theindex}
+
+  \item astrocalc\_s \textit{(module)}, \hyperpage{2}
+    \subitem astrocalc\_s.apert\_error \textit{(function)}, 
+		\hyperpage{2}
+    \subitem astrocalc\_s.centroide \textit{(function)}, \hyperpage{2}
+    \subitem astrocalc\_s.flujo \textit{(function)}, \hyperpage{2}
+    \subitem astrocalc\_s.flujosky \textit{(function)}, \hyperpage{2}
+  \item astroplot\_s \textit{(module)}, \hyperpage{3--4}
+    \subitem astroplot\_s.dispes \textit{(class)}, \hyperpage{3--4}
+      \subsubitem astroplot\_s.dispes.\_\_init\_\_ \textit{(method)}, 
+		\hyperpage{3}
+      \subsubitem astroplot\_s.dispes.disper \textit{(method)}, 
+		\hyperpage{4}
+      \subsubitem astroplot\_s.dispes.limpiar \textit{(method)}, 
+		\hyperpage{4}
+      \subsubitem astroplot\_s.dispes.setx1 \textit{(method)}, 
+		\hyperpage{3}
+      \subsubitem astroplot\_s.dispes.setx2 \textit{(method)}, 
+		\hyperpage{3}
+    \subitem astroplot\_s.on\_keydisp \textit{(function)}, 
+		\hyperpage{3}
+    \subitem astroplot\_s.on\_keypeak \textit{(function)}, 
+		\hyperpage{3}
+    \subitem astroplot\_s.on\_keysky1 \textit{(function)}, 
+		\hyperpage{3}
+    \subitem astroplot\_s.on\_keysky2 \textit{(function)}, 
+		\hyperpage{3}
+    \subitem astroplot\_s.setdispaxis \textit{(function)}, 
+		\hyperpage{3}
+    \subitem astroplot\_s.setpeakerrsky \textit{(function)}, 
+		\hyperpage{3}
+    \subitem astroplot\_s.skypeaksky \textit{(class)}, \hyperpage{4}
+      \subsubitem astroplot\_s.skypeaksky.\_\_init\_\_ \textit{(method)}, 
+		\hyperpage{4}
+      \subsubitem astroplot\_s.skypeaksky.limpiar \textit{(method)}, 
+		\hyperpage{4}
+
+  \indexspace
+
+  \item spectro\_metria \textit{(module)}, \hyperpage{5--8}
+    \subitem spectro\_metria.spect \textit{(class)}, \hyperpage{5--8}
+      \subsubitem spectro\_metria.spect.\_\_init\_\_ \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.display\_path \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.do\_final\_spect \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.do\_fit\_traza \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.do\_sky\_stract \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.do\_spec\_stract \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.freeimg \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.get\_exp\_time \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.get\_final\_spect \textit{(method)}, 
+		\hyperpage{7}
+      \subsubitem spectro\_metria.spect.get\_final\_spect\_error \textit{(method)}, 
+		\hyperpage{7}
+      \subsubitem spectro\_metria.spect.get\_fit\_traza \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.get\_gain \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.get\_path \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.get\_sky\_L \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.get\_sky\_L\_error \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.get\_sky\_pendent \textit{(method)}, 
+		\hyperpage{7}
+      \subsubitem spectro\_metria.spect.get\_sky\_R \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.get\_sky\_R\_error \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.get\_spec \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.get\_spec\_error \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.get\_traza \textit{(method)}, 
+		\hyperpage{6}
+      \subsubitem spectro\_metria.spect.loadimg \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.recalcularpeak \textit{(method)}, 
+		\hyperpage{7}
+      \subsubitem spectro\_metria.spect.set\_aperture \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.set\_disp\_axis \textit{(method)}, 
+		\hyperpage{7}
+      \subsubitem spectro\_metria.spect.set\_gain \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.set\_path \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.set\_peak \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.set\_peak\_aperture\_skyL\_skyR \textit{(method)}, 
+		\hyperpage{7}
+      \subsubitem spectro\_metria.spect.set\_skyL \textit{(method)}, 
+		\hyperpage{5}
+      \subsubitem spectro\_metria.spect.set\_skyR \textit{(method)}, 
+		\hyperpage{6}
+  \item spectro\_metria\_g \textit{(module)}, \hyperpage{9--10}
+    \subitem spectro\_metria\_g.spect \textit{(class)}, 
+		\hyperpage{9--10}
+      \subsubitem spectro\_metria\_g.spect.plot\_final \textit{(method)}, 
+		\hyperpage{9}
+      \subsubitem spectro\_metria\_g.spect.plot\_final\_and\_err \textit{(method)}, 
+		\hyperpage{9}
+      \subsubitem spectro\_metria\_g.spect.plot\_sky \textit{(method)}, 
+		\hyperpage{9}
+      \subsubitem spectro\_metria\_g.spect.plot\_sky\_and\_err \textit{(method)}, 
+		\hyperpage{9}
+      \subsubitem spectro\_metria\_g.spect.plot\_sky\_pendent \textit{(method)}, 
+		\hyperpage{9}
+      \subsubitem spectro\_metria\_g.spect.plot\_spec \textit{(method)}, 
+		\hyperpage{9}
+      \subsubitem spectro\_metria\_g.spect.plot\_spec\_and\_err \textit{(method)}, 
+		\hyperpage{9}
+      \subsubitem spectro\_metria\_g.spect.plot\_traza\_and\_fit \textit{(method)}, 
+		\hyperpage{9}
+      \subsubitem spectro\_metria\_g.spect.plot\_traza\_and\_img \textit{(method)}, 
+		\hyperpage{10}
+      \subsubitem spectro\_metria\_g.spect.plot\_traza\_fit\_and\_img \textit{(method)}, 
+		\hyperpage{9}
+      \subsubitem spectro\_metria\_g.spect.set\_peak\_aperture\_and\_sky \textit{(method)}, 
+		\hyperpage{10}
+
+\end{theindex}
