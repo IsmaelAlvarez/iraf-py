@@ -9,6 +9,7 @@
 #
 
 import numpy as np
+import matplotlib.pyplot as plt
 from astropy.modeling import models, fitting
 import pyfits
 from astrocalc_s import *

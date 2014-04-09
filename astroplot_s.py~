@@ -10,6 +10,8 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+from astropy.modeling import models, fitting
+import pyfits
 # from astropy.nddata import NDData # no usado en esta version
 # from pylab import *
 # import scipy
